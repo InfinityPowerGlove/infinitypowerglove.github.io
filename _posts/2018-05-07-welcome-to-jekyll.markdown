@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+author: "interrobrian"
 date:   2018-05-07 14:07:03 -0600
 categories: jekyll update
 ---

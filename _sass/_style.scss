@@ -1,0 +1,18 @@
+$primary-color: #490e61;
+$accent-color: #32fa05;
+
+.site-header {
+  border-top-color: $primary-color;
+}
+
+.footer-col-1 {
+  width: calc(30% - (30px / 2))
+}
+
+.footer-col-2 {
+  width: calc(25% - (30px / 2))
+}
+
+.p-author img {
+  vertical-align: middle;
+}
