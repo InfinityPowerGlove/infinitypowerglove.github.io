@@ -13,6 +13,15 @@ $accent-color: #32fa05;
   width: calc(25% - (30px / 2))
 }
 
-.p-author img {
+.p-author-img {
+  img {
+    vertical-align: middle;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.twitter-follow-button {
   vertical-align: middle;
 }
