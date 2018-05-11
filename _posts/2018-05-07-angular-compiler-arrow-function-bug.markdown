@@ -16,7 +16,7 @@ const lessThanThree =
     n < 3);
 {% endhighlight %}
 
-Compiling and running this with the TypeScript Compiler (`tsc`) results in `lessThanThree` correctly being `[1, 2]`. However, compiling and running this with the Angular Compiler (`ngc`) results in `lessThanThree` being `[1, 2, 3, 4, 5]`.
+Compiling and running this with the TypeScript Compiler (`tsc`) results in `lessThanThree` correctly being `[1, 2]`. However, compiling and running this with the Angular Compiler (`ngc`) results in `lessThanThree` being `[]`.
 
 The reason for this is that the Angular Compiler is producing incorrect JavaScript. Here is the output from the TypeScript Compiler:
 
@@ -40,7 +40,7 @@ var lessThanThree = oneThroughFive.filter(function (n) {
 });
 {% endhighlight %}
 
-Notice that the Angular Compiler has not only duplicated the comment, but _it's put the duplicated comment inbetween the `return` statement and the predicate_. This creates a significant problem because JavaScript's automatic semicolon insertion will cause the arrow function to [return nothing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return#Description), and thus the filter function won't filter anything.
+Notice that the Angular Compiler has not only duplicated the comment, but _it's put the duplicated comment inbetween the `return` statement and the predicate_. This creates a significant problem because JavaScript's automatic semicolon insertion will cause the arrow function to [return nothing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return#Description), and thus the filter function filters everything.
 
 To work around this, simply set the compiler to remove comments by adding this to your `tsconfig.json`:
 
