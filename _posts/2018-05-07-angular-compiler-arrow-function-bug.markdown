@@ -62,3 +62,6 @@ const lessThanThree =
 {% endhighlight %}
 
 I've opened up a [GitHub issue](https://github.com/angular/angular/issues/23829) on the Angular repository, so hopefully this gets addressed in the future!
+
+**UPDATE** May 11, 2018: [trotyl](https://github.com/trotyl) on GitHub [correctly identified](https://github.com/angular/angular/issues/23829#issuecomment-388263907) the root cause of the problem as a 
+[tsickle](https://github.com/angular/tsickle) issue. Therefore, I have created a [GitHub issue](https://github.com/angular/tsickle/issues/802) on tsickle for this as well.
