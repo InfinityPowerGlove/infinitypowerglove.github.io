@@ -6,7 +6,7 @@ twitter: "interrobrian"
 date:   2018-05-10 14:20:00 -0600
 categories: angular
 ---
-I came across an odd bug with the Angular Compiler recently. It occurs when it's targeting es5 and encounters a single statement arrow function with a comment on a line between the `=>` and the statement. This has been tested with both Angular 5 and Angular 6. Consider the following block of code:
+I came across an odd bug with the Angular Compiler recently. It occurs when it's targeting es5 and encounters a single statement arrow function with a comment on a line between the `=>` and the statement. This has been tested with both Angular 5 and Angular 6. **To clarify, you will only get this bug when using the Angular Compiler, which typically means when compiling an Angular package library (such as with the new `ng g library` command).** Consider the following block of code:
 
 {% highlight typescript %}
 const oneThroughFive = [1, 2, 3, 4, 5]
