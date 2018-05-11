@@ -1,8 +1,16 @@
 $primary-color: #490e61;
 $accent-color: #32fa05;
 
+.site-title {
+  float: none;
+}
+
 .site-header {
   border-top-color: $primary-color;
+  img {
+    margin-top: -10px;
+    margin-right: 5px;
+  }
 }
 
 .footer-col-1 {

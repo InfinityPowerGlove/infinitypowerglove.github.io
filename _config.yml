@@ -19,6 +19,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: infinitypowerglove
 google_analytics: UA-118958444-1
+image: ipg.jpg
 
 # Build settings
 markdown: kramdown
@@ -37,3 +38,9 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
