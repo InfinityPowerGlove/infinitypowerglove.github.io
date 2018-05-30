@@ -65,3 +65,5 @@ I've opened up a [GitHub issue](https://github.com/angular/angular/issues/23829)
 
 **UPDATE** May 11, 2018: [trotyl](https://github.com/trotyl) on GitHub [correctly identified](https://github.com/angular/angular/issues/23829#issuecomment-388263907) the root cause of the problem as a 
 [tsickle](https://github.com/angular/tsickle) issue. Therefore, I have created a [GitHub issue](https://github.com/angular/tsickle/issues/802) on tsickle for this as well.
+
+**UPDATE 2** May 15, 2018: It turns out, the root cause of this problem was an [issue](https://github.com/Microsoft/TypeScript/issues/24096) with TypeScript transformations. It has now been fixed on both [tsickle](https://github.com/angular/tsickle/pull/804) and [TypeScript](https://github.com/Microsoft/TypeScript/pull/24135), so it should be resolved in the next Angular release!
