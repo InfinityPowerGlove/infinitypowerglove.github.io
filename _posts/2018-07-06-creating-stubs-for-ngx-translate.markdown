@@ -11,7 +11,7 @@ I had an issue the other day with ngx translate in my tests. I feel like there i
 I primarily used ngx translate directly in the html. translating static strings to their proper culture. Which usually looks something like the example below:
 
 ```html
-  <div class="banner-title">{{ addressTitleTranslationKey | translate }}</div>
+{% raw %}<div class="banner-title">{{ addressTitleTranslationKey | translate }}</div>{% endraw %}
 ```
 
 Pretty straight forward and it works like a charm in real life as well as in tests.
@@ -19,7 +19,7 @@ Pretty straight forward and it works like a charm in real life as well as in tes
 Yesterday, however, I wanted to create a hint string that could be one of a few things. I created a typescript function that the html calls, returning one of two possible strings.
 
 ```html
-<div class="input-hint">{{ getInputHint() }}</div>
+{% raw %}<div class="input-hint">{{ getInputHint() }}</div>{% endraw %}
 ```
 
 ```ts
