@@ -4,7 +4,7 @@ title:  "AWS AppSync Authorization with a Second DynamoDB Table"
 author: "interrobrian"
 twitter: "interrobrian"
 date:   2018-08-06 11:00:00 -0600
-categories: aws appsync graphql
+tags: [aws, appsync, graphql]
 ---
 
 AWS AppSync is a powerful platform for making an offline-enabled backend for your app or website. However, for certain scenarios, I've had to change my thinking a bit.

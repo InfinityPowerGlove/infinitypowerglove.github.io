@@ -4,7 +4,7 @@ title:  "Creating Stubs for Ngx Translate"
 author: "Jeff-Stapleton"
 twitter: "jeffdstapleton"
 date:   2018-07-06 11:20:00 -0600
-categories: angular
+tags: [angular, ngx-translate]
 ---
 I had an issue the other day with ngx translate in my tests. I feel like there isn't a ton of documentation or examples out there so I figured I'd do a quick post explaining the issue and solution. 
 

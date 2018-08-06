@@ -4,7 +4,7 @@ title:  "Accessing the Android Activity in NativeScript"
 author: "interrobrian"
 twitter: "interrobrian"
 date:   2018-05-30 16:15:00 -0600
-categories: angular nativescript
+tags: [angular, nativescript]
 ---
 Recently, I had an issue where I needed to access the Android activity/window for a NativeScript app. I needed to temporarily change the soft input mode so that the keyboard would display properly while a WebView was visible. It ended up being pretty simple, but figuring out all the pieces was a little tricky:
 

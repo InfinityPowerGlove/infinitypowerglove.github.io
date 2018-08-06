@@ -29,7 +29,16 @@ layout: default
             </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
           {%- endif -%}
         </span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
+
+    {%- if page.author -%}
+      <p class="post-meta">
+        <span>Tags:</span>
+        {{ page.tags | join: ", " }}
+      </p>
+    {%- endif -%}
+
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
