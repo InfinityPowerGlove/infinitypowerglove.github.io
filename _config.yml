@@ -20,6 +20,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: infinitypowerglove
 google_analytics: UA-118958444-1
 image: ipg.jpg
+show_excerpts: true
 
 # Build settings
 markdown: kramdown
