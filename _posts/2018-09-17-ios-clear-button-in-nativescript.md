@@ -15,11 +15,17 @@ If you'd like to use the iOS clear button on a NativeScript text field, it's act
 ></TextField>
 {% endhighlight %}
 
-Values for this property come from [UITextField.ViewMode](https://developer.apple.com/documentation/uikit/uitextfield/viewmode). However, there is a caveat - just enabling the clear button will cause your input text to go under the clear button. To fix this, you must adjust the right padding when the field is focused. Here's a simple way to do it in NativeScript + Angular:
+Values for this property come from [UITextField.ViewMode](https://developer.apple.com/documentation/uikit/uitextfield/viewmode). However, there area couple caveats:
+1. Just enabling the clear button will cause your input text to go under the clear button.
+2. ngModel will make the clear button disappear.
+
+To fix these, you must adjust the right padding when the field is focused, and avoid ngModel. Here's a simple way to do it in NativeScript + Angular:
 
 {% highlight html %}
 <TextField
   ios.clearButtonMode="1"
+  [text]="myTextVariable"
+  (textChange)="myTextVariable = $event.value"
   (focus)="$event.object.paddingRight = isIOS ? 30 : 10"
   (blur)="$event.object.paddingRight = 10"
 ></TextField>
